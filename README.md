@@ -3,6 +3,16 @@
 
 This is a small admin dashboard project built with Next.js, Tailwind CSS, NextAuth.js, and Chart.js. The dashboard provides Google authentication functionality using NextAuth.js and features a responsive design built with grid structures.
 
+## Secreenshots 🏞️
+| Desktop                                                                                           | Mobile                                                                                         |
+|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ![Desktop](https://github.com/sayshark75/Admin-Dashboard/assets/112304655/d890f498-d383-4994-86a5-5f1ce31b9f22) | ![Mobile](https://github.com/sayshark75/Admin-Dashboard/assets/112304655/3082baa4-84d1-4317-9f19-d6573085136b) |
+
+| Desktop                                                                                           | Mobile                                                                                         |
+|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ![Desktop](https://github.com/sayshark75/Admin-Dashboard/assets/112304655/2e28fb73-af10-4a1e-9b69-44cb50c2d9bc) | ![Mobile](https://github.com/sayshark75/Admin-Dashboard/assets/112304655/bec62979-96d7-4de2-822a-b45f8c44913c) |
+
+
 ## Features ✨
 
 - Google authentication: Users can log in to the dashboard using their Google accounts.
