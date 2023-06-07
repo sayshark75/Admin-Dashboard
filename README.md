@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Admin Dashboard 📊
 
-First, run the development server:
+This is a small admin dashboard project built with Next.js, Tailwind CSS, NextAuth.js, and Chart.js. The dashboard provides Google authentication functionality using NextAuth.js and features a responsive design built with grid structures.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Features ✨
+
+- Google authentication: Users can log in to the dashboard using their Google accounts.
+- Responsive design: The dashboard is designed to work smoothly on various devices, adapting to different screen sizes and orientations.
+- Chart.js integration: The dashboard includes charts powered by Chart.js to visualize data in a user-friendly manner.
+
+## Technologies Used 🚀
+
+- [Next.js](https://nextjs.org/): A React framework for building server-rendered applications.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
+- [NextAuth.js](https://next-auth.js.org/): An authentication library for Next.js applications.
+- [Chart.js](https://www.chartjs.org/): A JavaScript library for creating responsive charts.
+
+## Getting Started 🛠️
+
+To get started with the admin dashboard, follow these steps:
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/sayshark75/Admin-Dashboard.git
+   ```
+
+2. Install the dependencies:
+
+   ```shell
+   cd admin-dashboard
+   npm install
+   ```
+
+3. Configure environment variables:
+
+   Create the `.env.local` file to provide the necessary values for the environment variables. Make sure to set up your Google OAuth credentials.
+
+4. Run the development server:
+
+   ```shell
+   npm run dev
+   ```
+
+   The dashboard will be accessible at [http://localhost:3000](http://localhost:3000).
+
+## Folder Structure 📂
+
+Here's an overview of the project's folder structure:
+
+```
+├── public/           # Static assets
+├── src/            # Next.js pages that define the dashboard's routes
+|   ├── components/       # React components used in the dashboard
+|   ├── styles/           # CSS styles
+|   ├── app/           # Server Components and Routes
+|   ├── charts/           # Chart.js configuration and data
+├── next.config.js    # Next.js configuration file
+├── nextAuth.config.js    # Next-Auth configuration.
+├── tailwind.config.js # Tailwind CSS configuration file
+├── .env.local        # Environment variables (not included in the repository)
+└── README.md         # Project documentation (you are here)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Feel free to adjust the folder structure to match your project's requirements.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contributing 🤝
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your fork.
+5. Submit a pull request to the `main` branch of the original repository.
 
-To learn more about Next.js, take a look at the following resources:
+Please ensure that your code follows the existing coding style and that you include appropriate tests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License 📜
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the [MIT License](LICENSE).
 
-## Deploy on Vercel
+## Acknowledgments 🙏
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- The project was built using the [Next.js](https://nextjs.org/) framework.
+- The user interface design utilizes [Tailwind CSS](https://tailwindcss.com/).
+- Authentication is handled by [NextAuth.js](https://next-auth.js.org/).
+- The charts are created using [Chart.js](https://www.chartjs.org/).
