@@ -2,11 +2,18 @@ const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
 
 export const LineData = {
   options: {
+    maintainAspectRatio: false,
+
     tension: 0.4,
     responsive: true,
     plugins: {
       legend: {
         position: "top",
+        align: "end",
+        labels: {
+          usePointStyle: true,
+          pointRadius: 2,
+        },
       },
       title: {
         display: true,

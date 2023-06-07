@@ -1,6 +1,5 @@
 "use client";
 
-import "@/app/globals.css";
 import { FiCalendar, FiPieChart, FiSettings, FiUsers } from "react-icons/fi";
 import { BsBell, BsCashStack, BsTags } from "react-icons/bs";
 import { BiLike, BiUserCircle } from "react-icons/bi";
@@ -9,13 +8,13 @@ import { Chart as ChartJS, Tooltip, Legend, CategoryScale, LinearScale, PointEle
 import { Line, Pie } from "react-chartjs-2";
 import { LineData } from "../../charts/lineChart.js";
 import { PieData } from "@/charts/pieChart";
-import Image from "next/image";
+import UserPopup from "@/components/UserPopup.jsx";
 
 const Dashboard = () => {
   ChartJS.register(CategoryScale, LinearScale, PointElement, ArcElement, LineElement, Title, Tooltip, Legend);
 
   return (
-    <main className="bg-[#DDDDDD] w-full h-screen grid grid-cols-12 grid-rows-[repeat(12,1fr)]">
+    <main className="bg-[#DDDDDD] w-full h-screen grid grid-cols-12 grid-rows-[repeat(12,1fr)] relative">
       <section className=" col-start-1 col-span-full row-start-[-1] row-span-full min-[820px]:col-span-3 min-[820px]:row-start-1 min-[820px]:row-span-full min-[820px]:p-8 p-2 relative">
         {/** Side Black Navbar */}
         <nav className="bg-black text-white rounded-2xl shadow-sm min-h-full h-full p-8 flex flex-col gap-4 max-[980px]:p-4 max-[820px]:flex-row max-[820px]:justify-center max-[820px]:items-center max-[820px]:sticky max-[820px]:bottom-0">
@@ -56,7 +55,7 @@ const Dashboard = () => {
               <input type="text" placeholder="Search" className="placeholder:text-[#AAAAAA] max-[440px]:hidden " /> <MdOutlineSearch className="max-[440px]:text-2xl" />
             </div>
             <BsBell className="text-2xl" />
-            <Image src="https://picsum.photos/100/100" width={"30"} height={"30"} alt="Account Pic" className="rounded-full max-w-[30px]" />
+            <UserPopup />
           </div>
         </section>
         {/** Total Stats Boxes  */}
@@ -75,14 +74,14 @@ const Dashboard = () => {
           </div>
         </section>
         {/** Chart Main */}
-        <section className="bg-white rounded-xl p-1 m-2 row-start-4 col-start-1 col-span-full row-span-5 max-[640px]:row-start-6 max-[640px]:row-span-4 flex justify-center items-center">
+        <section className="bg-white rounded-xl px-5 m-2 row-start-4 col-start-1 col-span-full row-span-5 max-[640px]:row-start-6 max-[640px]:row-span-4 flex justify-center items-center">
           <Line options={LineData.options} data={LineData.data} />
         </section>
         {/** Last Section of Stats */}
         <section className="row-start-9 col-start-1 col-span-full row-span-4 max-[640px]:row-start-10 max-[640px]:row-span-3 flex max-[640px]:flex-col max-[640px]:p-2">
           {/** Pie Chart */}
           <div className="m-2 p-1 bg-white rounded-xl flex flex-1 justify-center items-center max-[640px]:hidden">
-            <Pie data={PieData.data} />
+            <Pie data={PieData.data} options={PieData.options} />
           </div>
           {/** Tempeorary Schedule */}
           <div className="m-2 p-1 bg-white rounded-xl w-full flex flex-1 flex-col justify-center gap-2 items-start max-[640px]:p-0 max-[640px]:m-0">
