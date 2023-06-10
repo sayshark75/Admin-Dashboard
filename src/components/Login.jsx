@@ -3,7 +3,6 @@ import { LoginStyles } from "@/Styles/Login.styles";
 import Link from "next/link";
 import LoginModule from "./LoginModule";
 import GoogleLogin from "./GoogleLogin";
-import CheckSignedIn from "./CheckSignedIn";
 
 // import { Lato } from "next/font/google";
 // import { Montserrat } from "next/font/google";
@@ -11,7 +10,6 @@ import CheckSignedIn from "./CheckSignedIn";
 const Login = () => {
   return (
     <main className={LoginStyles.main}>
-      <CheckSignedIn />
       <aside className={LoginStyles.aside}>
         <p className={LoginStyles.asideText}>Board.</p>
       </aside>
