@@ -1,8 +1,8 @@
-import Login from "@/components/Login";
+import Redirect from "@/components/Redirect";
 export default function home() {
-  return (
-    <main>
-      <Login />
-    </main>
-  );
+    return (
+        <main>
+            <Redirect />
+        </main>
+    );
 }

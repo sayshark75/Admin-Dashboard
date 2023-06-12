@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { signOut, useSession } from "next-auth/react";
 import { MdClose } from "react-icons/md";
+import Loading from "./Loading";
 
 const UserPopup = () => {
     const { data, status } = useSession();
@@ -33,7 +34,7 @@ const UserPopup = () => {
     };
 
     if (status === "loading") {
-        return <div className="w-full h-screen bg-white absolute top-0 left-0 z-10 grid place-items-center text-3xl font-extrabold">Please Wait...</div>;
+        return <Loading />;
     }
 
     return (

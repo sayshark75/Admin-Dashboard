@@ -1,8 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["picsum.photos", "lh3.googleusercontent.com"],
-  },
+    images: {
+        unoptimized: true,
+    },
 };
 
 module.exports = nextConfig;
