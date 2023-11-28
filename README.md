@@ -85,8 +85,6 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 4. Push your changes to your fork.
 5. Submit a pull request to the `main` branch of the original repository.
 
-Please ensure that your code follows the existing coding style and that you include appropriate tests.
-
 ## License 📜
 
 This project is licensed under the [MIT License](LICENSE).
